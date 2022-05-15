@@ -24,9 +24,9 @@
                 </div>
             </div>
         </div>
-        
+
         <ul class="nav__list">
-            <li class="nav__item">Love</li>
+            <li class="nav__item nav__item-1"><img src="./img/download-removebg-preview.png" alt="" class="nav__image"></li>
             <li class="nav__item">View in editor</li>
             <li class="nav__item nav__item-3">Sign up</li>
             <li class="nav__item">Login</li>
@@ -37,15 +37,16 @@
         <section class="section">
             <h1 class="heading-primary" id="title">freeCodeCamp Survey Form</h1>
             <p class="paragraph" id="description">Thank you for taking the time to help us improve the platform</p>
-            <form action="post" class="form">
+
+            <form action="http://localhost:5000/data" class="form">
                 <div class="form-box" id="survey-form">
                     <label for="name" class="form-label" id="name-label">Name</label>
-                    <input type="text" class="form-input" id="name" placeholder="Enter your name">
+                    <input type="text" class="form-input" name="name" id="name" placeholder="Enter your name">
                 </div>
 
                 <div class="form-box">
                     <label for="email" class="form-label" id="email-label">Email</label>
-                    <input type="text" class="form-input" id="email" placeholder="Enter your Email">
+                    <input type="text" class="form-input" name="email" id="email" placeholder="Enter your Email">
                 </div>
 
                 <div class="form-box">
@@ -116,7 +117,7 @@
                         <input type="checkbox" class="form-checkbox" value="8"> City Meetups
                     </label>
                     <label class="form-label">
-                        <input type="checkbox" class="form-checkbox" value="9"> Wiki 
+                        <input type="checkbox" class="form-checkbox" value="9"> Wiki
                     </label>
                     <label class="form-label">
                         <input type="checkbox" class="form-checkbox" value="10"> Forum
@@ -128,10 +129,10 @@
 
                 <div class="form-box">
                     <p>Any comments or suggestions?</p>
-                    <textarea name="comment" placeholder="Enter your comment here..."></textarea>
+                    <textarea name="message" placeholder="Enter your comment here..."></textarea>
                 </div>
 
-                <button type="button" id="submit">Submit</button>
+                <button type="submit" value="submit" id="submit">Submit</button>
             </form>
         </section>
     </div>
