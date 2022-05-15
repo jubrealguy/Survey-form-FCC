@@ -156,6 +156,7 @@ body::before {
 
 .nav__list {
     white-space: nowrap;
+    display: flex;
 }
 
 .nav__item {
@@ -173,9 +174,19 @@ body::before {
     }
 }
 
+.nav__image {
+    width: 2.3rem;
+    height: auto;
+    margin-top: .5rem;
+}
+
 .nav__item-3 {
     background: rgb(25, 213, 110);
     color: black;
+}
+
+.nav__item-1 {
+    padding: .4rem 1.3rem;
 }
 
 .section {
